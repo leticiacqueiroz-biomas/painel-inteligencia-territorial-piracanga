@@ -1074,6 +1074,7 @@ body{font-family:'Clear Sans','Verdana',system-ui,sans-serif;background:var(--cr
 <button data-en="🔍 Diagnosis" onclick="showPage('diagnostico')">🔍 Diagnóstico</button>
 <button data-en="🌍 KYT × Census" onclick="showPage('kyt')">🌍 KYT × Censo</button>
 </nav>
+<span id="update-badge" style="font-size:10px;color:rgba(255,255,255,0.5);padding:4px 10px;border:1px solid rgba(255,255,255,0.18);border-radius:12px;white-space:nowrap;" data-en="Updated Jul 2026">Atualizado Jul 2026</span>
 <button id="lang-toggle" onclick="toggleLanguage()" title="Switch to English">EN</button>
 <!-- ══════════════════════════════════════════════════
      INÍCIO
@@ -1083,8 +1084,8 @@ body{font-family:'Clear Sans','Verdana',system-ui,sans-serif;background:var(--cr
 <div class="hero">
 <div class="hero-overlay"></div>
 <div class="hero-content">
-<div class="hero-tag" data-en="Piracanga Ecovillage · Maraú, Bahia">Ecovila Piracanga · Maraú, Bahia</div>
-<h1><span data-en="Piracanga Ecovillage">Ecovila Piracanga</span></h1>
+<div class="hero-tag" data-en="Piracanga River Basin · Maraú, Bahia">Bacia do Rio Piracanga · Maraú, Bahia</div>
+<h1><span data-en="Piracanga Territorial Intelligence">Inteligência Territorial Piracanga</span></h1>
 <p class="hero-sub" data-en="Integrated territorial intelligence platform — social census, agent mapping, systemic analysis and projects">Plataforma integrada de inteligência territorial — censo social, mapeamento de agentes, análise sistêmica e projetos</p>
 <div class="hero-pills">
 <button class="hero-pill hero-pill-btn" data-en="📊 Census 2025–2026" data-pill-tip="Levantamento de dados primários de domicílios e de bem-estar. Responsável: A.Mor em parceria com Biomas." onclick="showPage('censo')">
@@ -4164,95 +4165,143 @@ body{font-family:'Clear Sans','Verdana',system-ui,sans-serif;background:var(--cr
 </div>
 </div>
 <div class="diag-panel" id="diag-lacunas">
+<p style="font-size:12px;color:#666;margin-bottom:16px;" data-en="18 data gaps identified · Priority: H = High · M = Medium · L = Low">18 lacunas de dados identificadas · Prioridade: A = Alta · M = Média · B = Baixa</p>
+
+<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#05ab85;text-transform:uppercase;margin:18px 0 8px;" data-en="👥 AGENTS">👥 AGENTES</div>
 <div class="diag-item">
 <div class="diag-prio prio-alta" data-en="H">A</div>
 <div>
-<div class="diag-prob" data-en="AGENT_TYPE">AGENTES_TIPO</div>
+<div class="diag-prob" data-en="Non-resident landowners">Proprietários não-residentes</div>
+<div class="diag-acao" data-en="Profile, intentions and projects of 40+ landowners who live outside but influence territorial decisions.">Perfil, intenções e projetos dos 40+ proprietários que moram fora mas influenciam decisões territoriais.</div>
 </div>
-</div><div class="diag-item">
+</div>
+<div class="diag-item">
+<div class="diag-prio prio-alta" data-en="H">A</div>
+<div>
+<div class="diag-prob" data-en="Children and adolescents">Crianças e adolescentes</div>
+<div class="diag-acao" data-en="Data on under-18s: education, well-being and long-term permanence prospects.">Dados sobre menores de 18 anos: educação, bem-estar e perspectivas de permanência no território.</div>
+</div>
+</div>
+<div class="diag-item">
+<div class="diag-prio prio-alta" data-en="H">A</div>
+<div>
+<div class="diag-prob" data-en="Caubi workers (surrounding area)">Trabalhadores do Caubi (entorno)</div>
+<div class="diag-acao" data-en="Detailed profile, income, working conditions and perceptions of the 60+ essential workers from the surrounding area.">Perfil, renda, condições de trabalho e percepções dos 60+ trabalhadores essenciais que vivem no entorno.</div>
+</div>
+</div>
+<div class="diag-item">
+<div class="diag-prio prio-alta" data-en="H">A</div>
+<div>
+<div class="diag-prob" data-en="External agents of influence">Agentes externos de influência</div>
+<div class="diag-acao" data-en="Public agencies (IBAMA, APA, municipality), investors and partners with decision-making power over the territory.">Órgãos públicos (IBAMA, APA, prefeitura), investidores e parceiros com poder de decisão sobre o território.</div>
+</div>
+</div>
+<div class="diag-item">
+<div class="diag-prio prio-media" data-en="M">M</div>
+<div>
+<div class="diag-prob" data-en="Former residents network">Rede de ex-moradores</div>
+<div class="diag-acao" data-en="People who previously lived in Piracanga: reasons for leaving, current ties and potential for return.">Pessoas que já viveram em Piracanga: motivos de saída, vínculo atual e potencial de retorno.</div>
+</div>
+</div>
+<div class="diag-item">
 <div class="diag-prio prio-baixa" data-en="L">B</div>
 <div>
-<div class="diag-prob" data-en="AGENT_TYPE">AGENTES_TIPO</div>
+<div class="diag-prob" data-en="Regular visitors and tourists">Visitantes e turistas regulares</div>
+<div class="diag-acao" data-en="Volume, socioeconomic profile and territorial impact of seasonal visitors.">Volume, perfil socioeconômico e impacto dos frequentadores sazonais no território.</div>
 </div>
-</div><div class="diag-item">
+</div>
+
+<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#05ab85;text-transform:uppercase;margin:18px 0 8px;" data-en="🏘️ ORGANIZATIONS">🏘️ ORGANIZAÇÕES</div>
+<div class="diag-item">
 <div class="diag-prio prio-alta" data-en="H">A</div>
 <div>
-<div class="diag-prob" data-en="AGENT_TYPE">AGENTES_TIPO</div>
+<div class="diag-prob" data-en="Active projects by organization">Projetos ativos por organização</div>
+<div class="diag-acao" data-en="Inventory of ongoing projects across the 42 mapped organizations: responsible parties, timelines and resources.">Inventário de projetos em andamento nas 42 organizações: responsáveis, prazos e recursos envolvidos.</div>
 </div>
-</div><div class="diag-item">
-<div class="diag-prio prio-alta" data-en="H">A</div>
-<div>
-<div class="diag-prob" data-en="AGENT_TYPE">AGENTES_TIPO</div>
 </div>
-</div><div class="diag-item">
+<div class="diag-item">
 <div class="diag-prio prio-media" data-en="M">M</div>
 <div>
-<div class="diag-prob" data-en="AGENT_TYPE">AGENTES_TIPO</div>
+<div class="diag-prob" data-en="Legal and financial status">Status jurídico e financeiro</div>
+<div class="diag-acao" data-en="Active CNPJ, legal standing, budgets and financial sustainability of each organization.">CNPJ ativo, situação legal, orçamentos e sustentabilidade financeira de cada organização.</div>
 </div>
-</div><div class="diag-item">
-<div class="diag-prio prio-alta" data-en="H">A</div>
-<div>
-<div class="diag-prob" data-en="AGENT_TYPE">AGENTES_TIPO</div>
 </div>
-</div><div class="diag-item">
+<div class="diag-item">
 <div class="diag-prio prio-media" data-en="M">M</div>
 <div>
-<div class="diag-prob">ORGS</div>
+<div class="diag-prob" data-en="Mandate overlap and coverage gaps">Sobreposição de mandatos e lacunas</div>
+<div class="diag-acao" data-en="Mapping of duplications and uncovered functions among existing organizations.">Mapeamento de duplicações e funções sem cobertura entre as organizações existentes.</div>
 </div>
-</div><div class="diag-item">
-<div class="diag-prio prio-alta" data-en="H">A</div>
-<div>
-<div class="diag-prob">ORGS</div>
 </div>
-</div><div class="diag-item">
-<div class="diag-prio prio-media" data-en="M">M</div>
-<div>
-<div class="diag-prob">ORGS</div>
-</div>
-</div><div class="diag-item">
+<div class="diag-item">
 <div class="diag-prio prio-baixa" data-en="L">B</div>
 <div>
-<div class="diag-prob">ORGS</div>
+<div class="diag-prob" data-en="External partnerships">Parcerias externas ativas</div>
+<div class="diag-acao" data-en="Network of external partners (universities, NGOs, companies) of each local organization.">Rede de parceiros externos (universidades, ONGs, empresas) de cada organização local.</div>
 </div>
-</div><div class="diag-item">
+</div>
+
+<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#05ab85;text-transform:uppercase;margin:18px 0 8px;" data-en="🔄 FLOWS">🔄 FLUXOS</div>
+<div class="diag-item">
 <div class="diag-prio prio-alta" data-en="H">A</div>
 <div>
-<div class="diag-prob" data-en="FLOWS">FLUXOS</div>
+<div class="diag-prob" data-en="Internal financial flows">Fluxos financeiros internos</div>
+<div class="diag-acao" data-en="How much money circulates within the territory vs. leaks out to external economies. Key data for circular economy.">Quanto dinheiro circula internamente vs. vaza para economias externas. Dado essencial para economia circular.</div>
 </div>
-</div><div class="diag-item">
+</div>
+<div class="diag-item">
 <div class="diag-prio prio-alta" data-en="H">A</div>
 <div>
-<div class="diag-prob" data-en="FLOWS">FLUXOS</div>
+<div class="diag-prob" data-en="Material and energy flows">Fluxos de materiais e energia</div>
+<div class="diag-acao" data-en="Quantitative data on waste generated, water and energy consumed per household and collective space.">Dados quantitativos de resíduos gerados, consumo de água e energia por domicílio e espaço coletivo.</div>
 </div>
-</div><div class="diag-item">
+</div>
+
+<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#05ab85;text-transform:uppercase;margin:18px 0 8px;" data-en="⚖️ POWER">⚖️ PODER</div>
+<div class="diag-item">
+<div class="diag-prio prio-alta" data-en="H">A</div>
+<div>
+<div class="diag-prob" data-en="Land decision protocol">Protocolo de decisão fundiária</div>
+<div class="diag-acao" data-en="How decisions about purchase, sale and use of properties are formally taken — and who has veto power.">Como decisões de compra, venda e uso de propriedades são formalmente tomadas — e quem tem poder de veto.</div>
+</div>
+</div>
+<div class="diag-item">
 <div class="diag-prio prio-media" data-en="M">M</div>
 <div>
-<div class="diag-prob" data-en="POWER">PODER</div>
+<div class="diag-prob" data-en="Formal power map">Mapa formal de poder</div>
+<div class="diag-acao" data-en="Who holds legal authority over each decision type: land use, access, common resources, governance.">Quem detém autoridade legal sobre cada tipo de decisão: uso do solo, acesso, recursos comuns, governança.</div>
 </div>
-</div><div class="diag-item">
+</div>
+
+<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#05ab85;text-transform:uppercase;margin:18px 0 8px;" data-en="🚀 PROJECTS">🚀 PROJETOS</div>
+<div class="diag-item">
 <div class="diag-prio prio-alta" data-en="H">A</div>
 <div>
-<div class="diag-prob" data-en="POWER">PODER</div>
+<div class="diag-prob" data-en="Initiative pipeline">Pipeline de iniciativas</div>
+<div class="diag-acao" data-en="Projects in development or fundraising: status, projected budget, responsible parties and expected timeline.">Projetos em elaboração ou captação de recursos: status, orçamento projetado, responsáveis e prazo esperado.</div>
 </div>
-</div><div class="diag-item">
-<div class="diag-prio prio-alta" data-en="H">A</div>
-<div>
-<div class="diag-prob" data-en="PROJECTS">PROJETOS</div>
 </div>
-</div><div class="diag-item">
+<div class="diag-item">
 <div class="diag-prio prio-media" data-en="M">M</div>
 <div>
-<div class="diag-prob" data-en="PROJECTS">PROJETOS</div>
+<div class="diag-prob" data-en="Past projects archive">Histórico de projetos</div>
+<div class="diag-acao" data-en="Record of past initiatives: results, what worked, what didn't, and lessons institutionalized.">Registro de iniciativas passadas: resultados, o que funcionou, o que não funcionou e aprendizados institucionalizados.</div>
 </div>
-</div><div class="diag-item">
-<div class="diag-prio prio-media" data-en="M">M</div>
-<div>
-<div class="diag-prob" data-en="GENERAL">GERAL</div>
 </div>
-</div><div class="diag-item">
+
+<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#05ab85;text-transform:uppercase;margin:18px 0 8px;" data-en="📋 GENERAL">📋 GERAL</div>
+<div class="diag-item">
 <div class="diag-prio prio-alta" data-en="H">A</div>
 <div>
-<div class="diag-prob" data-en="GENERAL">GERAL</div>
+<div class="diag-prob" data-en="Territorial timeline">Linha do tempo territorial</div>
+<div class="diag-acao" data-en="Chronology of key decisions, events and transformations since the community's founding — institutional memory.">Cronologia de decisões, eventos e transformações relevantes desde a fundação da comunidade — memória institucional.</div>
+</div>
+</div>
+<div class="diag-item">
+<div class="diag-prio prio-media" data-en="M">M</div>
+<div>
+<div class="diag-prob" data-en="Conflicts and resolutions history">Histórico de conflitos e resoluções</div>
+<div class="diag-acao" data-en="Systematized record of territorial conflicts over the last 5 years and the resolution mechanisms used.">Registro sistematizado de conflitos territoriais dos últimos 5 anos e mecanismos de resolução utilizados.</div>
 </div>
 </div>
 </div>
@@ -4271,45 +4320,59 @@ body{font-family:'Clear Sans','Verdana',system-ui,sans-serif;background:var(--cr
 <span class="leg-item" data-en="81–100% Excellent" style="background:#4f9cf922;color:#4f9cf9;border:1px solid #4f9cf955">81–100% Excelente</span>
 </div>
 <div class="biomas-cards">
-<div class="biomas-card" onclick="showPage('mapas')" title="Ver Mapas">
+<div class="biomas-card" data-tooltip="Mede a saúde ecológica do território: pressões de conversão do solo, conectividade com áreas protegidas e observações de campo. Com 70%, Piracanga mantém boa integridade da vegetação nativa e conectividade ecológica, com atenção aos avanços pontuais de uso do solo nas bordas do território." onclick="showPage('mapas')" title="Ver Mapas">
 <div class="biomas-ring">
-<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#2ecc71" stroke-dasharray="201.06 201.06" stroke-dashoffset="60.32"></circle></svg>
-<div class="ring-inner"><span class="ring-emoji">🌿</span><span class="ring-pct">70%</span></div>
+<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#52b788" stroke-dasharray="201.06 201.06" stroke-dashoffset="60.32"></circle></svg>
+<div class="ring-inner"><span class="ring-emoji">🌿</span><span class="ring-pct" style="color:#52b788">70%</span></div>
 </div>
+<div class="biomas-scale-badge" data-en="Good" style="background:#52b78822;color:#52b788;border:1px solid #52b78855">Bom</div>
 <div class="biomas-card-name" data-en="LANDSCAPE INTEGRITY INDEX">ÍNDICE DE INTEGRIDADE DA PAISAGEM</div>
 <div class="biomas-card-desc" data-en="Is the territory maintaining its ecological integrity?"><em data-en="Is the territory maintaining its ecological integrity?">O território está mantendo sua integridade ecológica?</em></div>
-<ul class="biomas-card-list"><li data-en="Land Conversion">Conversão do Solo</li><li data-en="Integrated Protected Areas">Áreas Protegidas Integradas</li><li data-en="OS Field Data">Dados de campo OS</li></ul>
-<div class="biomas-card-nav" data-en="→ View Maps">→ Ver Mapas</div>
+<ul class="biomas-card-list"><li data-en="Land Use Conversion">Conversão do Solo</li><li data-en="Integrated Protected Areas">Áreas Protegidas Integradas</li><li data-en="OS Field Data">Dados de campo OS</li></ul>
+<div class="biomas-card-nav" data-en="→ See Maps">→ Ver Mapas</div>
 </div>
-<div class="biomas-card" onclick="showPage('censo')" title="Ver Censo">
+<div class="biomas-card" data-tooltip="Integra cinco dimensões do bem-estar humano: moradia, conectividade digital, saúde física e emocional, acesso a serviços e renda. Com 69%, Piracanga demonstra boa qualidade de vida — com destaque em saúde emocional e pertencimento — e pontos de atenção em renda e acesso a serviços externos." onclick="showPage('censo')" title="Ver Censo">
 <div class="biomas-ring">
-<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#9b59b6" stroke-dasharray="201.06 201.06" stroke-dashoffset="62.33"></circle></svg>
-<div class="ring-inner"><span class="ring-emoji">🧠</span><span class="ring-pct">69%</span></div>
+<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#52b788" stroke-dasharray="201.06 201.06" stroke-dashoffset="62.33"></circle></svg>
+<div class="ring-inner"><span class="ring-emoji">🧠</span><span class="ring-pct" style="color:#52b788">69%</span></div>
 </div>
+<div class="biomas-scale-badge" data-en="Good" style="background:#52b78822;color:#52b788;border:1px solid #52b78855">Bom</div>
 <div class="biomas-card-name" data-en="WELL-BEING INDEX">ÍNDICE DE BEM-ESTAR</div>
 <div class="biomas-card-desc" data-en="Do people live well in this territory?"><em data-en="Do people live well in this territory?">As pessoas vivem bem neste território?</em></div>
-<ul class="biomas-card-list"><li data-en="Affordable and Safe Housing">Moradia Acessível e Segura</li><li data-en="Internet Access">Acesso à Internet</li><li data-en="Physical and Emotional Well-being">Bem-estar Físico e Emocional</li><li data-en="Access to Health Services">Acesso a Serviços de Saúde</li><li data-en="Sufficient Income">Renda Suficiente</li></ul>
+<ul class="biomas-card-list"><li data-en="Safe and Affordable Housing">Moradia Acessível e Segura</li><li data-en="Internet Access">Acesso à Internet</li><li data-en="Physical and Emotional Well-being">Bem-estar Físico e Emocional</li><li data-en="Access to Healthcare">Acesso a Serviços de Saúde</li><li data-en="Sufficient Income">Renda Suficiente</li></ul>
 <div class="biomas-card-nav" data-en="→ View Census">→ Ver Censo</div>
 </div>
-<div class="biomas-card" onclick="showPage('censo')" title="Ver Censo">
+<div class="biomas-card" data-tooltip="Mede a capacidade de auto-organização coletiva: confiança nas instituições locais, coesão com a vizinhança, colaboração em projetos comuns, participação política e amor ao lugar. Com 70%, Piracanga tem forte senso de pertencimento e boa coesão social, com espaço para aprofundar a participação institucional." onclick="showPage('censo')" title="Ver Censo">
 <div class="biomas-ring">
-<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#f39c12" stroke-dasharray="201.06 201.06" stroke-dashoffset="60.32"></circle></svg>
-<div class="ring-inner"><span class="ring-emoji">🎍</span><span class="ring-pct">70%</span></div>
+<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#52b788" stroke-dasharray="201.06 201.06" stroke-dashoffset="60.32"></circle></svg>
+<div class="ring-inner"><span class="ring-emoji">🎍</span><span class="ring-pct" style="color:#52b788">70%</span></div>
 </div>
+<div class="biomas-scale-badge" data-en="Good" style="background:#52b78822;color:#52b788;border:1px solid #52b78855">Bom</div>
 <div class="biomas-card-name" data-en="TRUST INDEX">ÍNDICE DE CONFIANÇA</div>
 <div class="biomas-card-desc" data-en="Can this territory organize itself collectively?"><em data-en="Can this territory organize itself collectively?">Este território consegue se organizar coletivamente?</em></div>
 <ul class="biomas-card-list"><li data-en="Trust in Institutions">Confiança nas Instituições</li><li data-en="Trust in Neighbors">Confiança na Vizinhança</li><li data-en="Collaboration Index">Índice de Colaboração</li><li data-en="Political Participation">Participação Política</li><li data-en="Love of Place">Amor ao Lugar</li></ul>
 <div class="biomas-card-nav" data-en="→ View Census">→ Ver Censo</div>
 </div>
-<div class="biomas-card" onclick="showPage('censo')" title="Ver Censo">
+<div class="biomas-card" data-tooltip="Avalia as práticas coletivas de gestão de resíduos: compostagem e reciclagem por domicílio. Com 90%, Piracanga é referência nacional em responsabilidade com resíduos — a grande maioria dos moradores compostar e recicla ativamente, reduzindo drasticamente o volume enviado a aterros externos." onclick="showPage('censo')" title="Ver Censo">
 <div class="biomas-ring">
-<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#1abc9c" stroke-dasharray="201.06 201.06" stroke-dashoffset="20.11"></circle></svg>
-<div class="ring-inner"><span class="ring-emoji">♻</span><span class="ring-pct">90%</span></div>
+<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#4f9cf9" stroke-dasharray="201.06 201.06" stroke-dashoffset="20.11"></circle></svg>
+<div class="ring-inner"><span class="ring-emoji">♻</span><span class="ring-pct" style="color:#4f9cf9">90%</span></div>
 </div>
+<div class="biomas-scale-badge" data-en="Excellent" style="background:#4f9cf922;color:#4f9cf9;border:1px solid #4f9cf955">Excelente</div>
 <div class="biomas-card-name" data-en="WASTE RESPONSIBILITY INDEX">ÍNDICE DE RESPONSABILIDADE COM RESÍDUOS</div>
-<div class="biomas-card-desc" data-en="Does the territory adequately reduce, treat, and dispose of its waste?"><em data-en="Does the territory adequately reduce, treat, and dispose of its waste?">O território reduz, trata e descarta adequadamente seus resíduos?</em></div>
+<div class="biomas-card-desc" data-en="Does the territory adequately reduce, treat, and dispose of its waste?"><em data-en="Does the territory adequately reduce, treat and dispose of its waste?">O território reduz, trata e descarta adequadamente seus resíduos?</em></div>
 <ul class="biomas-card-list"><li data-en="Composting Adoption">Adoção de Compostagem</li><li data-en="Recycling Adoption">Adoção de Reciclagem</li></ul>
 <div class="biomas-card-nav" data-en="→ View Census">→ Ver Censo</div>
+</div>
+<div class="biomas-card" data-tooltip="Avalia o ciclo hídrico completo: acesso a água limpa para consumo, saúde da bacia hidrográfica local (rios, nascências, matas ciliares) e adequação do saneamento. Com 86%, Piracanga é referência em cuidado com a água — resultado de décadas de proteção dos mananciais e consciência hídrica coletiva.">
+<div class="biomas-ring">
+<svg viewbox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="32"></circle><circle class="fg" cx="40" cy="40" r="32" stroke="#4f9cf9" stroke-dasharray="201.06 201.06" stroke-dashoffset="28.15"></circle></svg>
+<div class="ring-inner"><span class="ring-emoji">💧</span><span class="ring-pct" style="color:#4f9cf9">86%</span></div>
+</div>
+<div class="biomas-scale-badge" data-en="Excellent" style="background:#4f9cf922;color:#4f9cf9;border:1px solid #4f9cf955">Excelente</div>
+<div class="biomas-card-name" data-en="WATER STEWARDSHIP INDEX">ÍNDICE DE CUIDADO COM A ÁGUA</div>
+<div class="biomas-card-desc"><em data-en="Does the territory care for water throughout its entire cycle?">O território cuida da água em todo o seu ciclo?</em></div>
+<ul class="biomas-card-list"><li data-en="Access to Clean Water Source">Acesso a Fonte de Água Limpa</li><li data-en="Watershed Quality">Qualidade da Bacia Hidrográfica</li><li data-en="Sanitation Management">Gestão de Saneamento</li></ul>
 </div>
 </div>
 </div>
@@ -5780,7 +5843,7 @@ th[onclick]:hover{background:rgba(45,106,79,.1);}
     <span style="display:inline-flex;align-items:center;gap:4px;font-size:.75rem;"><span style="background:#c05a00;color:white;border-radius:4px;padding:2px 6px;font-weight:700;font-size:.7rem;" data-en="Amplifies">Amplifica</span> <span style="color:#444;" data-en="Risk/opportunity is stronger inside Piracanga">Risco/oportunidade é maior em Piracanga</span></span>
     <span style="display:inline-flex;align-items:center;gap:4px;font-size:.75rem;"><span style="background:#1d6fa4;color:white;border-radius:4px;padding:2px 6px;font-weight:700;font-size:.7rem;" data-en="Diverges">Diverge</span> <span style="color:#444;" data-en="Piracanga differs sharply from municipal average">Piracanga difere muito da média municipal</span></span>
     <span style="display:inline-flex;align-items:center;gap:4px;font-size:.75rem;"><span style="background:#555;color:white;border-radius:4px;padding:2px 6px;font-weight:700;font-size:.7rem;" data-en="+ Context">+ Contexto</span> <span style="color:#444;" data-en="Census reveals what KYT cannot capture">Censo revela o que KYT não captura</span></span>
-    <a href="https://raw.githubusercontent.com/leticiacqueiroz-biomas/censopiracanga2025/main/KYT/KYT_Piracanga_Analysis_EN.pdf" target="_blank" rel="noopener" style="font-size:.78rem;color:#05ab85;font-weight:700;text-decoration:none;white-space:nowrap;margin-left:auto;" data-en="→ Full Report (PDF)">→ Relatório Completo (PDF)</a>
+    <a href="https://raw.githubusercontent.com/leticiacqueiroz-biomas/painel-inteligencia-territorial-piracanga/main/KYT/KYT_Piracanga_Analysis_EN.pdf" target="_blank" rel="noopener" style="font-size:.78rem;color:#05ab85;font-weight:700;text-decoration:none;white-space:nowrap;margin-left:auto;" data-en="→ Full Report (PDF)">→ Relatório Completo (PDF)</a>
   </div>
 </div>
 
@@ -6150,7 +6213,7 @@ th[onclick]:hover{background:rgba(45,106,79,.1);}
       <div style="font-size:.75rem;color:#8a9a8a;" data-en="Primary data: IBGE, MapBiomas, PRODES/INPE, IBAMA, CAR, DATASUS, RAIS, BCB, TSE, CPT + Piracanga Census 2025–2026 (116 respondents, 87 households)">Dados: IBGE, MapBiomas, PRODES/INPE, IBAMA, CAR, DATASUS, RAIS, BCB, TSE, CPT + Censo Piracanga 2025–2026 (116 respondentes, 87 domicílios)</div>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <a href="https://raw.githubusercontent.com/leticiacqueiroz-biomas/censopiracanga2025/main/KYT/KYT_Piracanga_Analysis_EN.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:white;border:1px solid #c0d8c0;color:#063e51;border-radius:8px;padding:8px 14px;font-size:.8rem;font-weight:700;text-decoration:none;" data-en="📄 Full Report (PDF)">📄 Relatório Completo (PDF)</a>
+      <a href="https://raw.githubusercontent.com/leticiacqueiroz-biomas/painel-inteligencia-territorial-piracanga/main/KYT/KYT_Piracanga_Analysis_EN.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:white;border:1px solid #c0d8c0;color:#063e51;border-radius:8px;padding:8px 14px;font-size:.8rem;font-weight:700;text-decoration:none;" data-en="📄 Full Report (PDF)">📄 Relatório Completo (PDF)</a>
       <a href="https://app.kyt.greenbridgefacility.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#063e51;color:white;border-radius:8px;padding:8px 14px;font-size:.8rem;font-weight:700;text-decoration:none;" data-en="🌐 KYT Platform →">🌐 Plataforma KYT →</a>
     </div>
   </div>
